@@ -59,3 +59,9 @@ Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:461)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
 	... 55 more
+2022-05-09 17:38:07 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM INFORMATION_SCHEMA.USERS INFORMATION_SCHEMA.[*]ROLES"; SQL statement:
+SELECT * FROM INFORMATION_SCHEMA.USERS INFORMATION_SCHEMA.ROLES [42000-200]
+2022-05-09 17:38:11 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM INFORMATION_SCHEMA.USERS INFORMATION_SCHEMA.[*]ROLES"; SQL statement:
+SELECT * FROM INFORMATION_SCHEMA.USERS INFORMATION_SCHEMA.ROLES [42000-200]
