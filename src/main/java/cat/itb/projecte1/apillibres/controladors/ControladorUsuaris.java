@@ -11,7 +11,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ControladorUsuaris {
 
-    private final ServeiUsuaris serveiUsuaris = null;
+    private ServeiUsuaris serveiUsuaris;
+
+    //private ControladorServeiUsuaris serveiUsuaris;
 
     //TODO
     //Amb l'exemple de l'altre controlador cal canviar el retorn d'aquests endpoints
