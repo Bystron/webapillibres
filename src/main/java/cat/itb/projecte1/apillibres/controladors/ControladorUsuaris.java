@@ -10,7 +10,8 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 public class ControladorUsuaris {
-    private final ServeiUsuaris serveiUsuaris;
+
+    private final ServeiUsuaris serveiUsuaris = null;
 
     //TODO
     //Amb l'exemple de l'altre controlador cal canviar el retorn d'aquests endpoints
