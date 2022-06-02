@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class ControladorResponseEntity {
 
-private final ServeiUsuaris serveiUsuaris;
+private ServeiUsuaris serveiUsuaris;
 
-    public ControladorResponseEntity(ServeiUsuaris serveiUsuaris) {
-        this.serveiUsuaris = serveiUsuaris;
-    }
+//    public ControladorResponseEntity(ServeiUsuaris serveiUsuaris) {
+//        this.serveiUsuaris = serveiUsuaris;
+//    }
 
     //proves amb un altre endpoint per consultar usuari
     //si l'id d'usuari no existeix es retorna 404 Not Found
