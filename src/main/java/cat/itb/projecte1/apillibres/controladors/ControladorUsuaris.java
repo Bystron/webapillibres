@@ -1,7 +1,7 @@
 package cat.itb.projecte1.apillibres.controladors;
 
 import cat.itb.projecte1.apillibres.model.entitats.Usuari;
-import cat.itb.projecte1.apillibres.model.serveis.ServeiUsuaris;
+import cat.itb.projecte1.apillibres.model.entitats.ServeiUsuaris;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

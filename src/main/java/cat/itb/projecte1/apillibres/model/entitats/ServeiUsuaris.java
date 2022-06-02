@@ -1,4 +1,4 @@
-package cat.itb.projecte1.apillibres.model.serveis;
+package cat.itb.projecte1.apillibres.model.entitats;
 
 import cat.itb.projecte1.apillibres.model.entitats.Usuari;
 import cat.itb.projecte1.apillibres.model.repositoris.RepositoriUsuaris;
@@ -11,7 +11,12 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class ServeiUsuaris {
+
     private final RepositoriUsuaris repoUsuaris;
+
+    public ServeiUsuaris(RepositoriUsuaris repoUsuaris) {
+        this.repoUsuaris = repoUsuaris;
+    }
 
     //llistar tots els ítems
     public List<Usuari> llistarUsuaris(){
@@ -45,7 +50,7 @@ public class ServeiUsuaris {
     //modificar sencer, si existeix el canvia, sino retorna null
     public Usuari modificarUsuari(Usuari usu){
         Usuari aux=null;
-        if(repoUsuaris.existsById(usu.getIdUsuari())) aux=repoUsuaris.save(usu);
+        if(repoUsuaris.existsById(usu.getidUsuari())) aux=repoUsuaris.save(usu);
         return aux;
     }
 

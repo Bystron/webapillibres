@@ -1,7 +1,7 @@
 package cat.itb.projecte1.apillibres.controladors;
 
 import cat.itb.projecte1.apillibres.model.entitats.Usuari;
-import cat.itb.projecte1.apillibres.model.serveis.ServeiUsuaris;
+import cat.itb.projecte1.apillibres.model.entitats.ServeiUsuaris;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,9 +9,13 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
-public class ExempleControladorResponseEntity {
+public class ControladorResponseEntity {
 
 private final ServeiUsuaris serveiUsuaris;
+
+    public ControladorResponseEntity(ServeiUsuaris serveiUsuaris) {
+        this.serveiUsuaris = serveiUsuaris;
+    }
 
     //proves amb un altre endpoint per consultar usuari
     //si l'id d'usuari no existeix es retorna 404 Not Found

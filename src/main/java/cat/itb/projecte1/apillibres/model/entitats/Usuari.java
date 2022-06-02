@@ -9,10 +9,14 @@ import javax.persistence.Id;
 @Entity
 public class Usuari {
     @Id
-    private String idUsuari;
-    private String password;
-    private String rol;
-    private double sou;
+    String idUsuari;
+    String password;
+    String rol;
+    double sou;
+
+    public String getidUsuari() {
+        return idUsuari;
+    }
 }
 
 
